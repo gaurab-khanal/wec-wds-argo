@@ -7,7 +7,6 @@ metadata:
     app.kubernetes.io/name: nginx-multi
 spec:
   replicas: 4
-  progressDeadlineSeconds: 60
   selector:
     matchLabels:
       app: nginx-multi
@@ -18,6 +17,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: public.ecr.aws/gaurab/hellonepal:latest
+        image: public.ecr.aws/gaurab/nginx:latest
         ports:
         - containerPort: 80
