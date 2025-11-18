@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: public.ecr.aws/gaurab/nginx:latest
+        image: public.ecr.aws/nginx/nginx:latest
         ports:
         - containerPort: 80
